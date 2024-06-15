@@ -18,10 +18,18 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.youssef.saoud.LearnAZ"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "description": "https://github.com/Youssefsaoud07/LearnAZ",
+    "githubUrl": "https://github.com/Youssefsaoud07/LearnAZ",
+    "extra": {
+      "eas": {
+        "projectId": "25903320-bbf5-4774-b7cc-f2266d36f6fa"
+      }
     }
   }
 }

@@ -59,7 +59,7 @@ const App = () => {
           <Stack.Screen
           name="Exercice"
           component={MyExercices}
-          options={{ title: 'Mes exercices' }}
+          options={{ title: 'Mes jeux préférés' }}
         />
          <Stack.Screen
           name="MaFamille"

@@ -9,65 +9,131 @@ const arabicBg = 'https://static.vecteezy.com/system/resources/thumbnails/003/32
 
 const frenchExercises = [
   {
-    id: 1,
-    text: 'Le chien ___ sur le toit.',
-    missingWord: 'est',
-    image: 'https://img.freepik.com/free-photo/portrait-cute-dog-anime-style_23-2151382135.jpg',
+    "id": 1,
+    "missingWord": "giraffe",
+    "text": "La ___a un longue cou.",
+    "image": require('../assets/giraffe.png')
   },
   {
-    id: 2,
-    text: 'Les enfants ___ au parc.',
-    missingWord: 'jouent',
-    image: 'https://img.freepik.com/vecteurs-premium/enfants-jouent-dans-parc_97632-481.jpg',
+    "id": 2,
+    "missingWord": "gentille",
+    "text": "La fille est ___",
+    "image": require('../assets/gentille.png')
   },
   {
-    id: 3,
-    text: 'Marie ___ une lettre.',
-    missingWord: 'écrit',
-    image: 'https://previews.123rf.com/images/djvstock/djvstock2104/djvstock210400967/170012782-gar%C3%A7on-%C3%A9crit-une-lettre-dessin-anim%C3%A9.jpg',
+    "id": 4,
+    "missingWord": "pigeon",
+    "text": "Le ___vol dans le ciel.",
+    "image": require('../assets/pigeon.png')
   },
   {
-    id: 4,
-    text: 'Le chien ___ fort.',
-    missingWord: 'aboie',
-    image: 'https://img.freepik.com/vecteurs-premium/caricature-petit-garcon-prenant-son-chien-pour-promenade-plein-air-dans-nature-enfants-faisant-taches-menageres-maison-concept_283146-380.jpg',
+    "id": 5,
+    "missingWord": "singe",
+    "text": "Le ___ est sur l'arbre.",
+    "image": require('../assets/singe.png')
   },
   {
-    id: 5,
-    text: 'Il ___ du café.',
-    missingWord: 'boit',
-    image: 'https://www.educatout.com/images/Enfants-et-cafeine-FB.jpg',
+    "id": 6,
+    "missingWord": "genou",
+    "text": "J'ai mal au ___",
+    "image": require('../assets/genou.png')
   },
   {
-    id: 6,
-    text: 'Nous ___ à la maison.',
-    missingWord: 'sommes',
-    image: 'https://i.ytimg.com/vi/ZlF_QS2fOOE/maxresdefault.jpg',
+    "id": 7,
+    "missingWord": "gymnase",
+    "text": "Les enfants jouent le ___",
+    "image": require('../assets/gym.png')
   },
   {
-    id: 7,
-    text: 'Vous ___ très gentils.',
-    missingWord: 'êtes',
-    image: 'https://www.leaetleo.com/uploads/leaetleo/comment-apprendre-a-votre-enfant-a-etre-gentil-mais-pas-trop-bc7d8e85ce78e7e97ff4c82ebc60603d.jpeg',
+    "id": 8,
+    "missingWord": "figue",
+    "text": "J'aime beaucoup le ___",
+    "image": require('../assets/figue.png')
   },
   {
-    id: 8,
-    text: 'Ils ___ une voiture rouge.',
-    missingWord: 'ont',
-    image: 'https://i.ytimg.com/vi/kc8kwII_LsM/maxresdefault.jpg',
+    "id": 9,
+    "missingWord": "wagon",
+    "text": "Le train a un ___",
+    "image": require('../assets/wagon.png')
   },
   {
-    id: 9,
-    text: 'Elle ___ au téléphone.',
-    missingWord: 'parle',
-    image: 'https://img.freepik.com/vecteurs-premium/jolie-petite-fille-parle-aide-telephone-portable_97632-4602.jpg',
+    "id": 10,
+    "missingWord": "guitar",
+    "text": "Gustave joue de la ___",
+    "image": require('../assets/guitar.png')
   },
   {
-    id: 10,
-    text: 'Nous ___ du pain.',
-    missingWord: 'mangeons',
-    image: 'https://img.freepik.com/vecteurs-premium/heureux-garcon-mignon-tenant-du-pain-frais_51635-8545.jpg',
+    "id": 11,
+    "missingWord": "gorilla",
+    "text": "Le ___est très grand.",
+    "image": require('../assets/gorilla.png')
   },
+  {
+    "id": 12,
+    "missingWord": "légumes",
+    "text": "Les ___sont bons pour la santé.",
+    "image": require('../assets/légumes.png')
+  },
+  {
+    "id": 13,
+    "missingWord": "pain",
+    "text": "Jeu où il faut assembler des pièces.",
+    "image": require('../assets/pain.png')
+  },
+  {
+    "id": 15,
+    "missingWord": "copin",
+    "text": "Alain et Martin sont des ___",
+    "image": require('../assets/copain.png')
+  },
+  {
+    "id": 16,
+    "missingWord": "train",
+    "text": "Les enfants montent dans le ___",
+    "image": require('../assets/train.png')
+  },
+  {
+    "id": 17,
+    "missingWord": "bassin",
+    "text": "En été, je joue dans le ___",
+    "image": require('../assets/bassin.png')
+  },
+  {
+    "id": 18,
+    "missingWord": "patin",
+    "text": "J'aime beacoup jouer le ___",
+    "image": require('../assets/patin.png')
+  },
+  {
+    "id": 19,
+    "missingWord": "terrain",
+    "text": "Les footballeurs jouent dans le ___",
+    "image": require('../assets/terrain.png')
+  },
+  {
+    "id": 20,
+    "missingWord": "dromadaire",
+    "text": "Le ___ est dans le désert.",
+    "image": require('../assets/dromadaire.png')
+  },
+  {
+    "id": 21,
+    "missingWord": "chaise",
+    "text": "C'est un ___",
+    "image": require('../assets/chaise.png')
+  },
+  {
+    "id": 22,
+    "missingWord": "aigle",
+    "text": "L'___ a des grands ailes .",
+    "image": require('../assets/aigle.png')
+  },
+  {
+    "id": 23,
+    "missingWord": "balai",
+    "text": "Maman nettoye la maison avec le ___",
+    "image": require('../assets/balai.png')
+  }
 ];
 
 const arabicExercises = [
@@ -224,10 +290,10 @@ const MyExercices = () => {
         <Text style={styles.title}>
           {isArabic ? 'النص إلى كلام' : 'Texte en parole'}
         </Text>
-        <Image source={{ uri: image }} style={styles.image} />
+        <Image source={image} style={styles.image} />
         <Text style={styles.exerciseText}>
           {textArray[0]}
-          ---------
+            .........
           {textArray[1]}
         </Text>
         <TextInput
@@ -259,14 +325,15 @@ const MyExercices = () => {
             </TouchableOpacity>
           </>
         )}
-        <TouchableOpacity style={styles.switchButton} onPress={toggleLanguage}>
+        {/* <TouchableOpacity style={styles.switchButton} onPress={toggleLanguage}>
           <Ionicons name={isArabic ? 'language' : 'language-outline'} size={24} color="white" />
           <Text style={styles.buttonText}>
           
           </Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
         <Text style={styles.pointsText}>
-          {isArabic ? `النقاط: ${points}` : `Points: ${points}`}
+        <Ionicons name="star" size={24} color="orange" />
+          {points}
         </Text>
       </BlurView>
 
@@ -282,9 +349,7 @@ const MyExercices = () => {
                 ? 'إجابة خاطئة. حاول مرة أخرى.'
                 : 'Réponse incorrecte. Essayez encore.'}
             </Text>
-            <Text style={styles.pointsText}>
-              {isArabic ? `النقاط: ${points}` : `Points: ${points}`}
-            </Text>
+           
             <TouchableOpacity style={styles.shareButton} onPress={() => setModalVisible(false)}>
               <Text style={styles.buttonText}>
                 {isCorrect
@@ -341,6 +406,7 @@ const styles = StyleSheet.create({
     height: 200,
     borderRadius: 10,
     marginBottom: 20,
+    resizeMode: 'contain'
   },
   exerciseText: {
     fontSize: 18,
@@ -364,7 +430,7 @@ const styles = StyleSheet.create({
     textAlign: 'right',
   },
   button: {
-    backgroundColor: '#007bff',
+    backgroundColor: '#FF4200',
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 10,
@@ -375,6 +441,11 @@ const styles = StyleSheet.create({
     gap: 10,
     alignItems: 'center',
     justifyContent: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 5,
+    elevation: 5,
   },
   buttonText: {
     color: '#fff',
@@ -399,11 +470,13 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 10,
     left: 10,
-    fontSize: 18,
-    color: 'green',
+    fontSize: 20,
+    color: 'gray',
     marginTop: 20,
-    textAlign: 'center',
+    textAlign: 'start',
     fontWeight: 'bold',
+    alignItems: 'center',
+    justifyContent: 'center'
   },
   modalContainer: {
     flex: 1,

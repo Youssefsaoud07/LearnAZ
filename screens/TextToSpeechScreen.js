@@ -11,130 +11,131 @@ const frenchExercises = [
   {
     "id": 1,
     "missingWord": "giraffe",
-    "text": "La ___a un longue cou.",
+    "text": "La ___a un long cou.",
     "image": require('../assets/giraffe.png')
   },
   {
     "id": 2,
-    "missingWord": "gentille",
-    "text": "La fille est ___",
-    "image": require('../assets/gentille.png')
+    "missingWord": "orange",
+    "text": "Je mange une ___",
+    "image": require('../assets/orange.png')
   },
   {
-    "id": 4,
+    "id": 3,
     "missingWord": "pigeon",
-    "text": "Le ___vol dans le ciel.",
+    "text": "Le ___vole dans le ciel.",
     "image": require('../assets/pigeon.png')
   },
   {
-    "id": 5,
+    "id": 4,
     "missingWord": "singe",
     "text": "Le ___ est sur l'arbre.",
     "image": require('../assets/singe.png')
   },
   {
-    "id": 6,
+    "id": 5,
     "missingWord": "genou",
     "text": "J'ai mal au ___",
     "image": require('../assets/genou.png')
   },
   {
-    "id": 7,
-    "missingWord": "gymnase",
-    "text": "Les enfants jouent le ___",
+    "id": 6,
+    "missingWord": "gymnastique",
+    "text": "Les enfants font de la ___",
     "image": require('../assets/gym.png')
   },
   {
-    "id": 8,
+    "id": 7,
     "missingWord": "figue",
     "text": "J'aime beaucoup le ___",
     "image": require('../assets/figue.png')
   },
   {
-    "id": 9,
+    "id": 8,
     "missingWord": "wagon",
     "text": "Le train a un ___",
     "image": require('../assets/wagon.png')
   },
   {
-    "id": 10,
-    "missingWord": "guitar",
+    "id": 9,
+    "missingWord": "guitare",
     "text": "Gustave joue de la ___",
     "image": require('../assets/guitar.png')
   },
   {
-    "id": 11,
+    "id": 10,
     "missingWord": "gorilla",
     "text": "Le ___est très grand.",
     "image": require('../assets/gorilla.png')
   },
   {
-    "id": 12,
+    "id": 11,
     "missingWord": "légumes",
     "text": "Les ___sont bons pour la santé.",
     "image": require('../assets/légumes.png')
   },
   {
-    "id": 13,
+    "id": 12,
     "missingWord": "pain",
-    "text": "Jeu où il faut assembler des pièces.",
+    "text": "je mange du ___",
     "image": require('../assets/pain.png')
   },
   {
-    "id": 15,
-    "missingWord": "copin",
+    "id": 13,
+    "missingWord": "copains",
     "text": "Alain et Martin sont des ___",
     "image": require('../assets/copain.png')
   },
   {
-    "id": 16,
+    "id": 14,
     "missingWord": "train",
     "text": "Les enfants montent dans le ___",
     "image": require('../assets/train.png')
   },
   {
-    "id": 17,
+    "id": 15,
     "missingWord": "bassin",
     "text": "En été, je joue dans le ___",
     "image": require('../assets/bassin.png')
   },
   {
-    "id": 18,
+    "id": 16,
     "missingWord": "patin",
-    "text": "J'aime beacoup jouer le ___",
+    "text": "J'aime beacoup jouer avec le ___",
     "image": require('../assets/patin.png')
   },
   {
-    "id": 19,
+    "id": 17,
     "missingWord": "terrain",
     "text": "Les footballeurs jouent dans le ___",
     "image": require('../assets/terrain.png')
   },
   {
-    "id": 20,
+    "id": 18,
     "missingWord": "dromadaire",
     "text": "Le ___ est dans le désert.",
     "image": require('../assets/dromadaire.png')
   },
   {
-    "id": 21,
+    "id": 19,
     "missingWord": "chaise",
-    "text": "C'est un ___",
+    "text": "C'est une ___",
     "image": require('../assets/chaise.png')
   },
   {
-    "id": 22,
+    "id": 20,
     "missingWord": "aigle",
-    "text": "L'___ a des grands ailes .",
+    "text": "L'___ a des grands ailes.",
     "image": require('../assets/aigle.png')
   },
   {
-    "id": 23,
+    "id": 21,
     "missingWord": "balai",
-    "text": "Maman nettoye la maison avec le ___",
+    "text": "Maman nettoie la maison avec le ___",
     "image": require('../assets/balai.png')
   }
 ];
+
 
 const arabicExercises = [
   {
@@ -290,7 +291,10 @@ const MyExercices = () => {
         <Text style={styles.title}>
           {isArabic ? 'النص إلى كلام' : 'Texte en parole'}
         </Text>
+        <TouchableOpacity onPress={speak}> 
         <Image source={image} style={styles.image} />
+        </TouchableOpacity>
+        
         <Text style={styles.exerciseText}>
           {textArray[0]}
             .........

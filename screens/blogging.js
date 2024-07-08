@@ -1,25 +1,28 @@
 import React from 'react';
-import { View, Text, ScrollView, StyleSheet, ImageBackground, TouchableOpacity, Image } from 'react-native';
+import { View, Text, ScrollView, StyleSheet, ImageBackground, TouchableOpacity, Linking, Image } from 'react-native';
 
-const schoolBg = 'https://img.freepik.com/free-vector/hand-drawn-back-school-background_23-2149464866.jpg'; // Image de fond
+const schoolBg = 'https://img.freepik.com/free-vector/hand-drawn-back-school-background_23-2149464866.jpg'; // Background image
 
 const BlogScreen = ({ navigation }) => {
   const articlesBlog = [
-    { id: 1, titre: 'L\'importance de l\'éducation', auteur: 'Jean Dupont', date: '20 Juin 2024', contenu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed ex velit. Mauris vitae ligula lorem. Sed ut tincidunt arcu.', image: 'https://images.inc.com/uploaded_files/image/1920x1080/getty_495235369_180481.jpg' },
-    { id: 2, titre: 'Stratégies d\'enseignement pour les jeunes apprenants', auteur: 'Marie Martin', date: '18 Juin 2024', contenu: 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed interdum, magna ut consequat luctus, neque justo porta magna.', image: 'https://www.skillstork.org/blog/wp-content/uploads/2022/07/Skillstork-1568x882.jpg' },
-    { id: 3, titre: 'Créer un environnement d\'apprentissage positif', auteur: 'Pierre Durand', date: '15 Juin 2024', contenu: 'Nulla facilisi. Nullam posuere, sem et volutpat pharetra, lorem ipsum finibus ex, at vehicula sapien sapien in diam. Proin id velit elit.', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ-fPga9dPE49aeG3dS13O0p89MtmRGMX8WQ&s' },
+    { id: 1, titre: 'Nos conseils pour une bonne prononciation française', date: '20 Juin 2024', lien: 'https://www.lingoda.com/fr/content/prononciation-francaise/', image: 'https://www.lingoda.com/wp-content/webp-express/webp-images/uploads/2024/01/shutterstock_1232495455.jpg.webp' },
+    { id: 2, titre: 'Fautes de français courantes à l’oral : 7 erreurs faciles à éviter.', date: '18 Juin 2024', lien: 'https://www.francaisauthentique.com/fautes-de-francais-courantes-oral/', image: 'https://www.francaisauthentique.com/wp-content/uploads/2023/08/fautes-francais-courantes.jpg' },
+    { id: 3, titre: '5 activités pour aider mon enfant à augmenter sa fluidité en lecture.', date: '15 Juin 2024', lien: 'https://www.alloprof.qc.ca/fr/parents/articles/saines-habitudes-vie-activites-pedagogiques/activites-augmenter-fluidite-lecture-k1380', image: 'https://cms.alloprof.qc.ca/sites/default/files/styles/1440w/public/2023-03/GettyImages-646928066-1%20%281%29_0.jpg?itok=u2kROXEC' },
+    { id: 4, titre: 'Améliorer l’apprentissage de la lecture chez l’enfant.', date: '12 Juin 2024', lien: 'https://www.epopia.com/blog/lirec/lire-et-ecrire/ameliorer-apprentissage-lecture-chez-enfant/', image: 'https://www.epopia.com/blog/wp-content/uploads/2021/06/ameliorer-apprentissage-de-la-lecture-chez-enfant.jpg' },
+    { id: 5, titre: '15 jeux d’éveil amusants à faire avec bébé', date: '10 Juin 2024', lien: 'https://naitreetgrandir.com/fr/chroniques/15-jeux-eveil-amusants-faire-avec-bebe/', image: 'https://naitreetgrandir.com/DocumentsNG/Fiches/images/15-jeux-eveil-amusants-faire-avec-bebe-3.Png' },
+    { id: 6, titre: 'Série de contes : niveau primaire', description: 'La collection "Boule de neige" est vivement conseillée par les enseignants aux petits écoliers qui viennent d’entamer leur apprentissage en langue française.', date: '8 Juin 2024', lien: 'https://www.yamamagroup.com/product/collection-boule-de-neige/', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdT_26dmzSbp4gMZ54s22WZI8ONl3SMADFAQ&s' }
   ];
 
   const rendreArticleBlog = (article) => (
     <TouchableOpacity
       key={article.id}
       style={styles.conteneurArticle}
-      
+      onPress={() => Linking.openURL(article.lien)}
     >
       <Image source={{ uri: article.image }} style={styles.imageArticle} />
       <Text style={styles.titreArticle}>{article.titre}</Text>
-      <Text style={styles.metaArticle}>{article.auteur} | {article.date}</Text>
-      <Text numberOfLines={3} ellipsizeMode="tail" style={styles.contenuArticle}>{article.contenu}</Text>
+      <Text style={styles.metaArticle}>{article.date}</Text>
+      {article.description && <Text style={styles.descriptionArticle}>{article.description}</Text>}
     </TouchableOpacity>
   );
 
@@ -75,7 +78,7 @@ const styles = StyleSheet.create({
     color: '#777',
     marginBottom: 10,
   },
-  contenuArticle: {
+  descriptionArticle: {
     fontSize: 16,
     color: '#333',
   },

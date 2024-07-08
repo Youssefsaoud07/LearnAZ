@@ -15,7 +15,7 @@ const HomeScreen = ({ navigation }) => {
     { screenName: 'DansMonAssiette', title: 'Dans Mon Assiette', color: '#2ecc71', size: 'small' },
     { screenName: 'MesAmisLesAnimaux', title: 'Mes Amis, Les Animaux', color: '#9b59b6', size: 'small' },
     { screenName: 'MonAmiLeLivre', title: 'Mon Ami, Le Livre', color: '#e67e22', size: 'small' },
-    { screenName: 'BlogScreen', title: 'Blog Scolaire', color: '#3498db', size: 'small' },
+    { screenName: 'BlogScreen', title: 'Perroquet raconte ', color: '#3498db', size: 'small' },
   ];
 
   const renderButton = ({ item }) => (
@@ -31,6 +31,7 @@ const HomeScreen = ({ navigation }) => {
     <ImageBackground source={bgImage} resizeMode='cover' style={styles.container}>
       <Text style={styles.title}>Bienvenue dans Mr Perroquet</Text>
       <Image source={MrPerroquet } style={styles.imageLogo} />
+      <Text style={styles.logoTitle}>Mr Perroquet</Text>
       <ScrollView contentContainerStyle={styles.buttonContainer}>
         {buttons.map((button, index) => (
           <View key={index} style={styles.buttonWrapper}>
@@ -54,6 +55,13 @@ const styles = StyleSheet.create({
     fontSize: 28,
     fontWeight: 'bold',
     color: '#fff',
+    marginBottom: 20,
+    textAlign: 'center',
+  },
+  logoTitle: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    color: '#3e7af0',
     marginBottom: 20,
     textAlign: 'center',
   },
